@@ -5,13 +5,13 @@
   sudo: yes
 
   tasks:
-    - name: Check node
-      command: which node
-      register: node_path
+    - name: Check vim
+      command: which vim
+      register: vim_path
 
-    - debug: 
-        msg: "Node was installed in {{node_path.stdout}}"
+    - debug:
+        msg: "vim was installed in {{vim_path.stdout}}"
 
-    - fail: 
-        msg: "Node Not Found, tests failed."
-      when: node_path.stdout != "/usr/local/bin/node"
+    - fail:
+        msg: "vim Not Found, tests failed."
+      when: vim_path.stdout != "/usr/local/bin/vim"

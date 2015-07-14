@@ -2,12 +2,10 @@
 - name: Install Debian packages
   apt: pkg={{item}} state=present update_cache=yes
   with_items:
+    - libevent-dev
+    - libncurses-dev
+    - pkg-config
     - wget
     - curl
     - make
-    - g++
     - gcc
-    - libcurl4-openssl-dev
-    - libsasl2-2
-    - libsasl2-dev
-    - libcurl3

@@ -1,8 +1,6 @@
 ---
-nodejs_playbook_version: "0.1.5"
-nodejs_version_tag: "v{{nodejs_version}}"
-nodejs_file_tag: "node-{{nodejs_version_tag}}"
-nodejs_file_name: "{{nodejs_file_tag}}.tar.gz"
-nodejs_base_url: "http://nodejs.org/dist/v{{nodejs_version}}/"
-nodejs_tarball_url: "{{nodejs_base_url}}{{nodejs_file_name}}"
-nodejs_shasum_url: "{{nodejs_base_url}}SHASUMS.txt"
+tmux_playbook_version: "0.0.1"
+tmux_file_tag: "tmux-{{tmux_version}}"
+tmux_file_name: "{{tmux_file_tag}}.tar.gz"
+tmux_base_url: "https://github.com/tmux/tmux/releases/download/{{tmux_version}}/"
+tmux_tarball_url: "{{tmux_base_url}}{{tmux_file_name}}"
